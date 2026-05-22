@@ -1,4 +1,16 @@
 {
+  
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Aprender CRUD"
+    },
+    {
+      "id": 2,
+      "title": "Practicar fetch"
+    }
+  ],
+  
   "users": [
     { "id": 1, "name": "Ana Torres", "email": "ana.torres@mail.com" },
     { "id": 2, "name": "Carlos Gómez", "email": "carlos.gomez@mail.com" },
