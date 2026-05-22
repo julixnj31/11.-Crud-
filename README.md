@@ -49,7 +49,7 @@ Antes de escribir la primera línea de código o ejecutar un comando, es obligat
   - Aprobación de Pull Requests  
 
 ---
-
+ 
 ### Desarrollador (Albañil)
 
 - **Responsabilidad:** Construcción de módulos y lógica  
@@ -58,7 +58,7 @@ Antes de escribir la primera línea de código o ejecutar un comando, es obligat
   - Reporte de avances  
   - Solicitud de revisión técnica  
 
----
+--- 
 
 ### El "Por qué"
 
