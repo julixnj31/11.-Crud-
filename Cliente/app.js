@@ -65,3 +65,27 @@ async function getTasks() {
   });
 
 }
+
+// =====================================================
+// ELIMINAR TAREA (DELETE)
+// =====================================================
+//
+// DELETE
+//
+// Esta función elimina
+// una tarea usando el id.
+//
+// =====================================================
+
+async function deleteTask(id) {
+
+  await fetch(`${URL}/${id}`, {
+
+    method: "DELETE"
+
+  });
+
+  // Actualizar lista
+  getTasks();
+
+}
