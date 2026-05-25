@@ -1,6 +1,5 @@
 
-const URL =
-  "http://localhost:3000/tasks";
+const URL ="http://localhost:3000/tasks";
 
 const taskForm =
   document.getElementById("task-form");
@@ -142,10 +141,18 @@ async function editTask(id, oldTitle) {
 // EVENTO FORMULARIO
 // =====================================================
 
+async function createTask(event) {
+
+  event.preventDefault();
+
+  console.log("Tarea creada");
+
+}
+
 taskForm.addEventListener(
   "submit",
   createTask
-);
+)
 
 
 
