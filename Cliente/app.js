@@ -89,3 +89,52 @@ async function deleteTask(id) {
   getTasks();
 
 }
+
+// =====================================================
+// EDITAR TAREA (UPDATE)
+// =====================================================
+//
+// PATCH
+//
+// Esta función modifica
+// el nombre de la tarea.
+//
+// =====================================================
+
+async function editTask(id, oldTitle) {
+
+  // Nuevo nombre
+  const newTitle =
+    prompt(
+      "Editar tarea",
+      oldTitle
+    );
+
+  // Validar vacío
+  if (!newTitle) return;
+
+  // Actualizar
+  await fetch(`${URL}/${id}`, {
+
+    method: "PATCH",
+
+    headers: {
+
+      "Content-Type":
+        "application/json"
+
+    },
+
+    body:
+      JSON.stringify({
+
+        title: newTitle
+
+      })
+
+  });
+
+  // Actualizar lista
+  getTasks();
+
+}
